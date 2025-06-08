@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  font-family: 'GillSansRegular', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 16px;
+}
+
+@font-face {
+    font-family: GillSansRegular;
+    src: url(../fonts/GillSans.ttc);
+
+}

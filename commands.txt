@@ -1,0 +1,8 @@
+terminal prompts to run
+
+npm init -y 
+npm i sass --save-dev
+
+
+"serve": "live-server",
+"compile:saas": "sass scss/styles.scss css/styles.css -w --no-source-map"

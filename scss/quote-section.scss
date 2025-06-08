@@ -1,0 +1,45 @@
+@use "variables";
+
+.quote-section {
+    //width: 798px;
+    height: 300px;
+    //background-color: variables.$site-purple;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    color: #fff;
+    padding-left: 30px;
+    padding-right: 30px;
+
+    .quote {
+        padding-top: 50px;
+        width: 789px;
+        color: variables.$site-yellow;
+        font-size: 15px;
+
+        .text {
+            font-size: 17px;
+            font-style: italic;
+            font-weight: bolder;
+        }
+
+
+        .name {
+            margin-top: 30px;
+            color: variables.$site-red;
+            margin-bottom: 5px;
+            
+
+        }
+
+        .company {
+            color: #a8a8a8;
+            font-size: 10px;
+            
+            //margin: -10px 0 0 0;
+            
+        }
+    }
+
+
+}

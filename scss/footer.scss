@@ -1,0 +1,252 @@
+@use "variables";
+
+.footer {
+    position: relative;
+    width: 100%;
+    min-height: 455px;
+    background-color: variables.$site-red;
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+
+
+
+    .logo {
+        position: relative;
+        margin-bottom: 30px;
+        margin-top: 30px;
+        width: 92px;
+        height: 42px;
+        
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        margin-left: 43.5%;
+
+        //background-color: green;
+        border: solid 2px #fff;
+        //background-image: url(../images/logo.png);
+
+        span { 
+            position: absolute;
+            bottom: -5px;
+            left: -20px;
+            width: 100%;
+            color: #fff;
+
+        }
+
+    }
+
+    .text {
+        font-size: 16px;
+        justify-content: space-evenly;
+        margin-bottom: 50px;
+        
+        .address {
+            padding-bottom: -20px;
+
+        }
+
+        .phone {
+            margin-top: -10px;
+            padding-top: -20px;
+
+        }
+
+        .email {
+            margin-top: -10px;
+            padding-top: -20px;
+            margin-bottom: 20px;
+
+        }
+
+    }
+
+    .submission {
+        margin: 10px;
+        width: 696px;
+        height: 60px;
+        display: flex;
+
+        .text-fill {
+            height: 100%;
+            //margin-left: 10px;
+            width: 529px;
+            color: rgba(255, 255, 255, 1);
+            background-color: #F56B88;
+            border: none;
+            
+        }
+        
+        .text-fill::placeholder {
+            color: rgba(255, 255, 255, 0.5);
+            padding-left: 10px;
+
+        }
+
+        .button {
+            width: 167px;
+            height: 100%;
+            background-color: #fff;
+            color: variables.$site-red;
+            font-weight: bold;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+
+            &:hover {
+                background-color: variables.$site-purple;
+                color: #fff;
+            }
+        }
+        
+    }
+
+    .socials {
+
+        .footer-icons {
+            justify-content: space-between;
+            padding: 16px;
+            //background-color: teal;
+            //color: variables.$site-red;
+        
+            
+            ul {
+                list-style-type: none;
+
+                .facebook {
+                    //padding: 2px 7px;
+                    padding-left: 7px;
+                    //position:absolute;
+                    //margin-top: 5px;
+                    //background-color: beige;
+                }
+                
+            }
+            
+            li {
+                display: inline-block;
+                width: 32px;
+                height: 32px;
+                background-color: #fff;
+                color: variables.$site-red;
+                margin: 10px;
+                border-radius: 20%;
+                //position: relative;
+
+                a {
+                    color: variables.$site-red;
+
+                }
+
+
+            }
+            
+            .footer-right {
+                margin-left: auto;
+            }
+
+        }
+
+    }
+
+    .bottom-text {
+        font-size: 12px;
+    }
+
+}
+
+
+// Media Queries for Footer
+@media (max-width: 760px) {
+    .footer {
+        width: 100%;
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+
+        .logo {
+            position: relative;
+            margin-bottom: 30px;
+            margin-top: 30px;
+            width: 92px;
+            height: 42px;
+            
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            margin-left: 32%;
+    
+            //background-color: green;
+            border: solid 2px #fff;
+            //background-image: url(../images/logo.png);
+    
+            span { 
+                position: absolute;
+                bottom: -5px;
+                left: -20px;
+                width: 100%;
+                color: #fff;
+    
+            }
+    
+        }
+
+        .submission {
+            //margin: 10px;
+            //width: 696px;
+            //min-height: 60px;
+            height: 120px;
+            display: flex;
+            flex-direction: column;
+            margin: 0 auto;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+
+    
+            .text-fill {
+                height: 50px;
+                //margin-left: 10px;
+                width: 80%;
+                //width: 80%;
+                color: rgba(255, 255, 255, 1);
+                background-color: #F56B88;
+                border: none;
+                font-size: 11px;
+                
+            }
+            
+            .text-fill::placeholder {
+                color: rgba(255, 255, 255, 0.5);
+                padding-left: 10px;
+    
+            }
+    
+            .button {
+                //max-width: 500px;
+                margin: 10px;
+                width: 80%;
+                height: 40px;
+                background-color: #fff;
+                color: variables.$site-red;
+                font-weight: bold;
+                //display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+    
+                &:hover {
+                    background-color: variables.$site-purple;
+                    color: #fff;
+                }
+            }
+            
+        }
+    }
+}
